@@ -1,0 +1,358 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #0000ff;
+  background: linear-gradient(-45deg, #2b2bc29c, #0b6d8d, #0b8d8d, #0c6b97);
+  background-size: 400% 400%;
+  position: relative;
+  animation: waterMoves 7s ease-in-out infinite;
+}
+
+@keyframes waterMoves {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.jfish {
+  width: 250px;
+  height: 475px;
+  /* border: solid 1px black; */
+  position: absolute;
+  left: 400px;
+  top: 240px;
+  transform: rotate(-1deg) scale(1);
+  animation: jFish-animation 6s linear infinite;
+}
+@keyframes jFish-animation {
+  0% {
+    transform: rotate(-2deg) scale(1);
+  }
+  50% {
+    transform: rotate(0.5deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+  }
+}
+
+.waveCover {
+  width: 110%;
+  height: 225px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(255, 255, 255);
+  position: absolute;
+  left: 0px;
+  top: -40px;
+  transform: rotate(-2deg) scale(1);
+  animation: jFish-animation 6s linear infinite;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(-2deg) scale(1);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+  }
+}
+
+.top {
+  width: 120px;
+  height: 100px;
+  border: solid 1px black;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bb, #0b6d8d, #074a61);
+  background-size: 100%;
+  border-radius: 60px 60px 0px 0px;
+  position: absolute;
+  left: 20px;
+  top: 24px;
+}
+.bfold {
+  width: 160px;
+  height: 20px;
+  border: solid 1px black;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bb, #0b6d8d, #074a61);
+  background-size: 100%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 2px #0c2629;
+  position: absolute;
+  left: 0px;
+  top: 110px;
+}
+
+.bfoldcover {
+  width: 160px;
+  height: 20px;
+  border: solid 1px black;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bb, #0b6d8d, #074a61);
+  background-size: 100%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 15px 30px #0c2629;
+  position: absolute;
+  left: 0px;
+  top: 111px;
+}
+
+.tentacles {
+  width: 160px;
+  height: 275px;
+  /*border: solid 1px black;*/
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+
+.tentacle1 {
+  width: 8px;
+  height: 275px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bbb2, #0b6d8dab, #074a61ab);
+  background-size: 100%;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+@keyframes tentacle-animation {
+  0% {
+    transform: rotate(-1deg) scale(1);
+  }
+  50% {
+    transform: rotate(-0.5deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(-1deg) scale(1);
+  }
+}
+
+.tentacle2 {
+  width: 8px;
+  height: 255px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #28c0f394, #2489aab7, #23718b9d);
+  background-size: 100%;
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+
+.tentacle3 {
+  width: 8px;
+  height: 225px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #1acfc69a, #1895bec5, #074a61b2);
+  background-size: 100%;
+  position: absolute;
+  left: 38px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle4 {
+  width: 8px;
+  height: 255px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bb75, #2c93b6c0, #4696b1ad);
+  background-size: 100%;
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle5 {
+  width: 8px;
+  height: 325px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #13ccd381, #3c9ebe85, #074a61);
+  background-size: 100%;
+  position: absolute;
+  left: 65px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle6 {
+  width: 8px;
+  height: 205px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #64bfdda1, #9bb9c4c0, #5c90a1a1);
+  background-size: 100%;
+  position: absolute;
+  left: 70px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle7 {
+  width: 8px;
+  height: 175px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: blue;
+  background: linear-gradient(-90deg, #0f90bb, #0b6d8d, #074a61);
+  background-size: 100%;
+  position: absolute;
+  left: 85px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+
+.tentacle8 {
+  width: 8px;
+  height: 195px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(0, 0, 255, 0.39);
+  background: linear-gradient(-90deg, #0f90bbcc, #0b6d8dcb, #074a61a9);
+  background-size: 100%;
+  position: absolute;
+  left: 90px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle9 {
+  width: 8px;
+  height: 255px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(0, 0, 255, 0.39);
+  background: linear-gradient(-90deg, #6fc9e7b7, #63afc9cb, #2fb5e2a9);
+  background-size: 100%;
+  position: absolute;
+  left: 102px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle10 {
+  width: 8px;
+  height: 225px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(0, 0, 255, 0.39);
+  background: linear-gradient(-90deg, #0f90bbcc, #31aed8cb, #074a61a9);
+  background-size: 100%;
+  position: absolute;
+  left: 115px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle11 {
+  width: 8px;
+  height: 195px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(0, 0, 255, 0.39);
+  background: linear-gradient(-90deg, #0f90bbcc, #0b6d8dcb, #074a61a9);
+  background-size: 100%;
+  position: absolute;
+  left: 125px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+.tentacle12 {
+  width: 8px;
+  height: 295px;
+  border: solid 1px black;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(0, 0, 255, 0.39);
+  background: linear-gradient(-90deg, #0f90bbcc, #0b6d8dcb, #074a61a9);
+  background-size: 100%;
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  box-shadow: 2px 2px 5px #008d9b;
+  transform: rotate(-1deg) scale(1);
+  animation: tentacle-animation 3s linear infinite;
+}
+
+div[class^="bubble-"] {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  background-color: #d0e9f571;
+  border-radius: 50%;
+}
+/* BUBBLES STUFF HERE */
+.bubble-1 {
+  bottom: -100px;
+  left: 5%;
+  animation: bubble-movement 14s linear infinite;
+}
+
+.bubble-2 {
+  bottom: -100px;
+  left: 15%;
+  animation: bubble-movement 5s linear infinite;
+}
+
+.bubble-3 {
+  bottom: -100px;
+  left: 25%;
+  animation: bubble-movement 15s linear infinite;
+}
+.bubble-4 {
+  bottom: -100px;
+  left: 35%;
+  animation: bubble-movement 8s linear infinite;
+}
+.bubble-5 {
+  bottom: -100px;
+  left: 60%;
+  animation: bubble-movement 6s linear infinite;
+}
+
+@keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+    transform: translate3d(-50%, -1000px, 0);
+    height: 75px;
+    width: 75px;
+  }
+}
